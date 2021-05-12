@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripCell" id="RkG-bj-sAd" customClass="TripCustomCell" customModule="atlantademo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RkG-bj-sAd" id="DXD-Ku-fOO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-1z-p6b" userLabel="VerticalMoreButton">
+                        <rect key="frame" x="353" y="0.0" width="14" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="LEb-31-mhj"/>
+                            <constraint firstAttribute="width" constant="14" id="lV2-0K-dG4"/>
+                        </constraints>
+                        <state key="normal" image="Vertical More"/>
+                        <connections>
+                            <action selector="VerticalMoreButtonAction:" destination="RkG-bj-sAd" eventType="touchUpInside" id="8mt-iA-noS"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QVw-sW-e8Q" userLabel="DepartArriveCityLabel">
+                        <rect key="frame" x="60" y="-1" width="250" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="B3Z-fo-yTE"/>
+                            <constraint firstAttribute="width" constant="250" id="OMm-ub-ea8"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" metaFont="system" size="17"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1C-90-Zmn" userLabel="GateBoardDescriptionLabel">
+                        <rect key="frame" x="60" y="23" width="250" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="dmL-D7-NMl"/>
+                            <constraint firstAttribute="height" constant="17" id="dzD-yR-NqV"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OvalGray" translatesAutoresizingMaskIntoConstraints="NO" id="O8q-dI-FOi" userLabel="GrayGreenDot">
+                        <rect key="frame" x="16" y="14" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WVd-o1-4EF"/>
+                            <constraint firstAttribute="width" constant="20" id="kz0-WJ-TXM"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gor-yq-TgZ" userLabel="AssistanceImageView">
+                        <rect key="frame" x="322" y="8" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.46666666666666667" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="O8q-dI-FOi" firstAttribute="leading" secondItem="DXD-Ku-fOO" secondAttribute="leadingMargin" id="DKq-67-OQd"/>
+                    <constraint firstItem="V1C-90-Zmn" firstAttribute="leading" secondItem="O8q-dI-FOi" secondAttribute="trailing" constant="24" id="Hvk-OM-ITV"/>
+                    <constraint firstItem="QVw-sW-e8Q" firstAttribute="leading" secondItem="O8q-dI-FOi" secondAttribute="trailing" constant="24" id="SdV-qT-7XH"/>
+                    <constraint firstItem="mTP-1z-p6b" firstAttribute="top" secondItem="DXD-Ku-fOO" secondAttribute="top" id="THl-oP-7lu"/>
+                    <constraint firstItem="V1C-90-Zmn" firstAttribute="top" secondItem="QVw-sW-e8Q" secondAttribute="bottom" constant="3" id="aTA-ag-Bop"/>
+                    <constraint firstAttribute="bottom" secondItem="V1C-90-Zmn" secondAttribute="bottom" constant="4" id="pFy-n9-bep"/>
+                    <constraint firstItem="O8q-dI-FOi" firstAttribute="top" secondItem="DXD-Ku-fOO" secondAttribute="topMargin" constant="3" id="tLC-Iq-HkD"/>
+                    <constraint firstAttribute="trailing" secondItem="mTP-1z-p6b" secondAttribute="trailing" constant="8" id="vrn-Gh-1wc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="AssistanceImageView" destination="gor-yq-TgZ" id="wrA-Vx-MVS"/>
+                <outlet property="DepartArriveCityLabel" destination="QVw-sW-e8Q" id="dMg-kD-6ap"/>
+                <outlet property="DepartArriveCityLabelYConstraint" destination="aTA-ag-Bop" id="S10-q0-QaV"/>
+                <outlet property="GateBoardDescriptioLabel" destination="V1C-90-Zmn" id="Sm9-in-dBS"/>
+                <outlet property="GrayGreenDotImageView" destination="O8q-dI-FOi" id="wm0-vc-1jc"/>
+                <outlet property="VerticalMoreButton" destination="mTP-1z-p6b" id="grO-l3-cx8"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="OvalGray" width="40" height="40"/>
+        <image name="Vertical More" width="12" height="42"/>
+    </resources>
+</document>

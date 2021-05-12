@@ -1,0 +1,6 @@
+framework module AtriusRoute {
+  umbrella header "AtriusRoute.h"
+
+  export *
+  module * { export * }
+}

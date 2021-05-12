@@ -1,0 +1,6 @@
+framework module AtriusCore {
+  umbrella header "AtriusCore.h"
+
+  export *
+  module * { export * }
+}

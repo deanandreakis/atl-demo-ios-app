@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AirportEmployee" representedClassName="AirportEmployee" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="IntermediateStop" representedClassName="IntermediateStop" syncable="YES">
+        <attribute name="arrivalDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="arrivalGate" attributeType="String" syncable="YES"/>
+        <attribute name="arrivalName" attributeType="String" syncable="YES"/>
+        <attribute name="departureDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="departureFlightAirlineName" attributeType="String" syncable="YES"/>
+        <attribute name="departureFlightNumber" attributeType="String" syncable="YES"/>
+        <attribute name="departureFlightSeatAssignment" attributeType="String" syncable="YES"/>
+        <attribute name="departureGate" attributeType="String" syncable="YES"/>
+        <attribute name="destinationName" attributeType="String" syncable="YES"/>
+        <relationship name="trip" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="intermediateStop" inverseEntity="Trip" syncable="YES"/>
+    </entity>
+    <entity name="Traveler" representedClassName="Traveler" syncable="YES">
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="numberOfMiles" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardCardID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rewardStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="trips" toMany="YES" deletionRule="Cascade" destinationEntity="Trip" inverseName="traveler" inverseEntity="Trip" syncable="YES"/>
+    </entity>
+    <entity name="Trip" representedClassName="Trip" syncable="YES">
+        <attribute name="completedTrip" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="confirmationNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departureDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="departureFlightAirlineName" attributeType="String" syncable="YES"/>
+        <attribute name="departureFlightNumber" attributeType="String" syncable="YES"/>
+        <attribute name="departureFlightSeatAssignment" attributeType="String" syncable="YES"/>
+        <attribute name="departureGate" attributeType="String" syncable="YES"/>
+        <attribute name="finalArrivalDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="finalArrivalGate" attributeType="String" syncable="YES"/>
+        <attribute name="finalDestination" attributeType="String" syncable="YES"/>
+        <attribute name="origin" attributeType="String" syncable="YES"/>
+        <relationship name="intermediateStop" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IntermediateStop" inverseName="trip" inverseEntity="IntermediateStop" syncable="YES"/>
+        <relationship name="traveler" maxCount="1" deletionRule="Nullify" destinationEntity="Traveler" inverseName="trips" inverseEntity="Traveler" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AirportEmployee" positionX="-171" positionY="243" width="128" height="60"/>
+        <element name="IntermediateStop" positionX="-288" positionY="297" width="128" height="195"/>
+        <element name="Traveler" positionX="-63" positionY="87" width="128" height="120"/>
+        <element name="Trip" positionX="-65" positionY="270" width="128" height="240"/>
+    </elements>
+</model>

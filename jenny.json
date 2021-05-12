@@ -1,0 +1,50 @@
+{
+    "Traveler": {
+	    "name":"Jenny Jones",
+	    "numberOfMiles":165815,
+	    "rewardCardID":"#6666666666",
+	    "rewardStatus":"Gold Status",
+	    "Trips": [
+                  {
+                  "confirmationNumber":"1234567890",
+                  "completedTrip":false,
+                  "departureDate":"2017-08-31",
+                  "departureFlightAirlineName":"Delta",
+                  "departureFlightNumber":"1998",
+                  "departureGate":"A6",
+                  "origin":"Miami, FL",
+                  "departureFlightSeatAssignment":"29D",
+                  "finalArrivalDate":"2017-08-31",
+                  "finalArrivalGate":"T5",
+                  "finalDestination":"Atlanta, GA",
+                  },
+                  {
+                  "confirmationNumber":"1234567890",
+                  "completedTrip":true,
+                  "departureDate":"2017-01-01",
+                  "departureFlightAirlineName":"Delta",
+                  "departureFlightNumber":"1998",
+                  "departureGate":"A6",
+                  "origin":"Chicago, IL",
+                  "departureFlightSeatAssignment":"29D",
+                  "finalArrivalDate":"2017-01-01",
+                  "finalArrivalGate":"H4",
+                  "finalDestination":"Washington, D.C.",
+                  "IntermediateStops": [
+                                        {
+                                        "departureFlightSeatAssignment":"29D",
+                                        "arrivalDate":"2017-01-01",
+                                        "arrivalGate":"B34",
+                                        "arrivalName":"Atlanta, GA",
+                                        "departureDate":"2017-01-01",
+                                        "departureFlightAirline":"Delta",
+                                        "departureFlightNumber":"226",
+                                        "departureGate":"T2",
+                                        "destinationName":"Washington, D.C."
+                                        }
+                                        ]
+                  }
+	    ]
+    }
+}
+

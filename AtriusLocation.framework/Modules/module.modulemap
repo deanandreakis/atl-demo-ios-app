@@ -1,0 +1,6 @@
+framework module AtriusLocation {
+  umbrella header "AtriusLocation.h"
+
+  export *
+  module * { export * }
+}

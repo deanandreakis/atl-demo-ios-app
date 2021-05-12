@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation View Controller-->
+        <scene sceneID="Ici-MY-7QQ">
+            <objects>
+                <viewController storyboardIdentifier="NavigationView" hidesBottomBarWhenPushed="YES" id="j7c-nh-rgy" customClass="NavigationViewController" customModule="atlantademo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTq-zl-zLZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3wu-yG-Rw8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FWq-h2-MlF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-31-Cna" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BSY-HO-T8A">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jO-Kv-HM7" userLabel="PlayPauseButton">
+                                <rect key="frame" x="271" y="588" width="88" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="DCe-YB-BHy"/>
+                                    <constraint firstAttribute="height" constant="44" id="uSd-eE-wSF"/>
+                                </constraints>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPauseButtonSelected:" destination="j7c-nh-rgy" eventType="touchUpInside" id="TCk-Ps-lko"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3o-l7-MHL" userLabel="AddButton">
+                                <rect key="frame" x="16" y="588" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="XQa-Z6-PfP"/>
+                                    <constraint firstAttribute="height" constant="44" id="jpZ-ta-56I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonSelected:" destination="j7c-nh-rgy" eventType="touchUpInside" id="V5f-sh-pWm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ2-WH-6Mv" userLabel="PreviousButton">
+                                <rect key="frame" x="1" y="28" width="38" height="38"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="H4K-Xr-8YH"/>
+                                    <constraint firstAttribute="height" constant="38" id="Xi6-P5-4A6"/>
+                                </constraints>
+                                <state key="normal" image="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prevButtonSelected:" destination="j7c-nh-rgy" eventType="touchUpInside" id="e37-S9-jlh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsW-lb-XY3" userLabel="NextButton">
+                                <rect key="frame" x="336" y="28" width="38" height="38"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="100-VA-fn4"/>
+                                    <constraint firstAttribute="width" constant="38" id="mFz-83-zAy"/>
+                                </constraints>
+                                <state key="normal" image="Forward"/>
+                                <connections>
+                                    <action selector="nextButtonSelected:" destination="j7c-nh-rgy" eventType="touchUpInside" id="kG1-cw-cb9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PsW-lb-XY3" firstAttribute="trailing" secondItem="FWq-h2-MlF" secondAttribute="trailingMargin" constant="15" id="0D1-em-l96"/>
+                            <constraint firstItem="aQ2-WH-6Mv" firstAttribute="leading" secondItem="FWq-h2-MlF" secondAttribute="leadingMargin" constant="-15" id="6FY-A4-y2U"/>
+                            <constraint firstItem="ahv-31-Cna" firstAttribute="leading" secondItem="FWq-h2-MlF" secondAttribute="leadingMargin" constant="-16" id="BEK-Qw-AJx"/>
+                            <constraint firstItem="aQ2-WH-6Mv" firstAttribute="top" secondItem="OTq-zl-zLZ" secondAttribute="bottom" constant="8" id="EtS-Ga-Ksl"/>
+                            <constraint firstItem="3wu-yG-Rw8" firstAttribute="top" secondItem="BSY-HO-T8A" secondAttribute="bottom" id="FUz-l2-Jgx"/>
+                            <constraint firstItem="BSY-HO-T8A" firstAttribute="leading" secondItem="FWq-h2-MlF" secondAttribute="leading" id="I0i-oO-u5b"/>
+                            <constraint firstItem="3wu-yG-Rw8" firstAttribute="top" secondItem="ahv-31-Cna" secondAttribute="bottom" id="Lvi-m9-pKC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ahv-31-Cna" secondAttribute="trailing" constant="-16" id="NSS-az-xbN"/>
+                            <constraint firstItem="PsW-lb-XY3" firstAttribute="top" secondItem="OTq-zl-zLZ" secondAttribute="bottom" constant="8" id="T6I-qT-MqV"/>
+                            <constraint firstItem="g3o-l7-MHL" firstAttribute="leading" secondItem="FWq-h2-MlF" secondAttribute="leadingMargin" id="TIj-mg-jvD"/>
+                            <constraint firstAttribute="trailing" secondItem="BSY-HO-T8A" secondAttribute="trailing" id="WXw-30-QID"/>
+                            <constraint firstItem="3wu-yG-Rw8" firstAttribute="top" secondItem="8jO-Kv-HM7" secondAttribute="bottom" constant="35" id="chs-fN-cC5"/>
+                            <constraint firstItem="3wu-yG-Rw8" firstAttribute="top" secondItem="g3o-l7-MHL" secondAttribute="bottom" constant="35" id="dzs-th-PTW"/>
+                            <constraint firstItem="8jO-Kv-HM7" firstAttribute="trailing" secondItem="FWq-h2-MlF" secondAttribute="trailingMargin" id="igp-OM-XRd"/>
+                            <constraint firstItem="ahv-31-Cna" firstAttribute="top" secondItem="OTq-zl-zLZ" secondAttribute="bottom" id="nwX-sO-ooA"/>
+                            <constraint firstItem="BSY-HO-T8A" firstAttribute="top" secondItem="OTq-zl-zLZ" secondAttribute="bottom" id="u99-TU-LwQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aMapView" destination="ahv-31-Cna" id="6DA-Pw-u7a"/>
+                        <outlet property="addButton" destination="g3o-l7-MHL" id="h5K-2w-A5a"/>
+                        <outlet property="addButtonYConstraint" destination="dzs-th-PTW" id="iKO-uO-SBB"/>
+                        <outlet property="beginButtonYConstraint" destination="chs-fN-cC5" id="2aC-hD-tRM"/>
+                        <outlet property="nextButton" destination="PsW-lb-XY3" id="let-AI-umU"/>
+                        <outlet property="nextButtonYConstraint" destination="T6I-qT-MqV" id="4Eq-uD-AQO"/>
+                        <outlet property="playPauseButton" destination="8jO-Kv-HM7" id="rWX-bD-fJH"/>
+                        <outlet property="previousButton" destination="aQ2-WH-6Mv" id="VC3-Ie-v2g"/>
+                        <outlet property="previousButtonYConstraint" destination="EtS-Ga-Ksl" id="FZr-fb-dxe"/>
+                        <outlet property="tableView" destination="BSY-HO-T8A" id="qKc-Fk-a4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apw-7W-stv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="165.06746626686657"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back" width="14" height="21"/>
+        <image name="Forward" width="14" height="21"/>
+    </resources>
+</document>

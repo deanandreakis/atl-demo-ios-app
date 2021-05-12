@@ -1,0 +1,6 @@
+framework module AtriusActionZone {
+  umbrella header "AtriusActionZone.h"
+
+  export *
+  module * { export * }
+}

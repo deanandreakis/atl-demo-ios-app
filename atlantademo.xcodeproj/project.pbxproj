@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D7589782062884200E18DAB /* ZoneInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7589772062884200E18DAB /* ZoneInfo.m */; };
+		4B1B398A1FB6209400BC2158 /* RouteDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B39891FB6209400BC2158 /* RouteDataClass.m */; };
+		4B598BCD1FBA7B2F0047B46E /* SimulateLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B598BCC1FBA7B2F0047B46E /* SimulateLocation.m */; };
+		5E0110CC1FAFF33C00393B7C /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0110CB1FAFF33C00393B7C /* LoginScreenView.swift */; };
+		5E0110CE1FAFFC7B00393B7C /* LoginPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0110CD1FAFFC7B00393B7C /* LoginPickerView.swift */; };
+		5E0934EE1FBD2D9300EC7ED3 /* AssistanceTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0934ED1FBD2D9300EC7ED3 /* AssistanceTypeEnum.swift */; };
+		5E11C3001F9264C20047DF90 /* johnsmith.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E11C2FF1F9264A40047DF90 /* johnsmith.json */; };
+		5E15B55D1F8AAC34000AFC7C /* IntermediateStop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B5571F8AAC34000AFC7C /* IntermediateStop+CoreDataClass.swift */; };
+		5E15B55E1F8AAC34000AFC7C /* IntermediateStop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B5581F8AAC34000AFC7C /* IntermediateStop+CoreDataProperties.swift */; };
+		5E15B55F1F8AAC34000AFC7C /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B5591F8AAC34000AFC7C /* Trip+CoreDataClass.swift */; };
+		5E15B5601F8AAC34000AFC7C /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B55A1F8AAC34000AFC7C /* Trip+CoreDataProperties.swift */; };
+		5E15B5611F8AAC34000AFC7C /* Traveler+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B55B1F8AAC34000AFC7C /* Traveler+CoreDataClass.swift */; };
+		5E15B5621F8AAC34000AFC7C /* Traveler+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B55C1F8AAC34000AFC7C /* Traveler+CoreDataProperties.swift */; };
+		5E76137B1FB542D600613705 /* jenny.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E76137A1FB542D600613705 /* jenny.json */; };
+		5E76137D1FB543FC00613705 /* ernst.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E76137C1FB543FB00613705 /* ernst.json */; };
+		5E76137F1FB544E400613705 /* jane.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E76137E1FB544E400613705 /* jane.json */; };
+		5E7D60FA1F87182700396046 /* TripRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7D60F91F87182700396046 /* TripRouteCell.xib */; };
+		5E7D60FC1F87192600396046 /* TripRouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D60FB1F87192600396046 /* TripRouteCell.swift */; };
+		5E95045E1FAAB0E700D31319 /* LoginScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E95045D1FAAB0E700D31319 /* LoginScreenView.xib */; };
+		5E9B239F1F894A1E0096BBDD /* RewardStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B239E1F894A1E0096BBDD /* RewardStatusEnum.swift */; };
+		5EB55B7820633D7100A1C93C /* ATL_TGATE2018.mmpk in Resources */ = {isa = PBXBuildFile; fileRef = 5EB55B7720633D7100A1C93C /* ATL_TGATE2018.mmpk */; };
+		5EEFD0481FA5275E00066957 /* AtriusRoute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0441FA5275D00066957 /* AtriusRoute.framework */; };
+		5EEFD0491FA5275E00066957 /* AtriusRoute.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0441FA5275D00066957 /* AtriusRoute.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EEFD04A1FA5275E00066957 /* AtriusCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0451FA5275D00066957 /* AtriusCore.framework */; };
+		5EEFD04B1FA5275E00066957 /* AtriusCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0451FA5275D00066957 /* AtriusCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EEFD04C1FA5275E00066957 /* AtriusLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0461FA5275D00066957 /* AtriusLocation.framework */; };
+		5EEFD04D1FA5275E00066957 /* AtriusLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0461FA5275D00066957 /* AtriusLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EEFD04E1FA5275E00066957 /* AtriusActionZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0471FA5275D00066957 /* AtriusActionZone.framework */; };
+		5EEFD04F1FA5275E00066957 /* AtriusActionZone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEFD0471FA5275D00066957 /* AtriusActionZone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EF164EA1F8C5E340053CD57 /* AirportEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF164E81F8C5E340053CD57 /* AirportEmployee+CoreDataClass.swift */; };
+		5EF164EB1F8C5E340053CD57 /* AirportEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF164E91F8C5E340053CD57 /* AirportEmployee+CoreDataProperties.swift */; };
+		5EFA43011FB913E700C593B7 /* Assistance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA43001FB913E700C593B7 /* Assistance.storyboard */; };
+		5EFA43031FB914F200C593B7 /* AssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA43021FB914F200C593B7 /* AssistanceViewController.swift */; };
+		9E59941DDB079C6B15E374AC /* Pods_atlantademo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003F2935BDE7D98C1292571C /* Pods_atlantademo.framework */; };
+		C14DFF6E1F54F8AD000F60E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DFF6D1F54F8AD000F60E9 /* AppDelegate.swift */; };
+		C14DFF701F54F8AD000F60E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DFF6F1F54F8AD000F60E9 /* HomeViewController.swift */; };
+		C14DFF731F54F8AD000F60E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14DFF711F54F8AD000F60E9 /* Main.storyboard */; };
+		C14DFF761F54F8AD000F60E9 /* atlantademo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C14DFF741F54F8AD000F60E9 /* atlantademo.xcdatamodeld */; };
+		C14DFF781F54F8AD000F60E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14DFF771F54F8AD000F60E9 /* Assets.xcassets */; };
+		C14DFF7B1F54F8AD000F60E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14DFF791F54F8AD000F60E9 /* LaunchScreen.storyboard */; };
+		C14DFF861F54F8AD000F60E9 /* atlantademoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DFF851F54F8AD000F60E9 /* atlantademoTests.swift */; };
+		C14DFF911F54F8AD000F60E9 /* atlantademoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DFF901F54F8AD000F60E9 /* atlantademoUITests.swift */; };
+		C17AE5F71F58F5E0001F4CE1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE5F61F58F5E0001F4CE1 /* ScheduleViewController.swift */; };
+		C17AE5F91F58F688001F4CE1 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE5F81F58F688001F4CE1 /* BookViewController.swift */; };
+		C17AE5FB1F58F69B001F4CE1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE5FA1F58F69B001F4CE1 /* FeedViewController.swift */; };
+		C17AE5FD1F58F6AC001F4CE1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE5FC1F58F6AC001F4CE1 /* MoreViewController.swift */; };
+		C182A7501F641827001ECAB6 /* TripHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C182A74F1F641827001ECAB6 /* TripHeaderView.xib */; };
+		C182A7521F64211F001ECAB6 /* TripHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182A7511F64211F001ECAB6 /* TripHeaderView.swift */; };
+		C182A7541F642AC0001ECAB6 /* TripSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182A7531F642AC0001ECAB6 /* TripSectionHeaderView.swift */; };
+		C182A7561F642B38001ECAB6 /* TripSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C182A7551F642B38001ECAB6 /* TripSectionHeaderView.xib */; };
+		C182A7581F642E64001ECAB6 /* TripCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C182A7571F642E64001ECAB6 /* TripCustomCell.swift */; };
+		C182A75A1F642EE2001ECAB6 /* TripCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C182A7591F642EE2001ECAB6 /* TripCustomCell.xib */; };
+		C185BD881F57A068004D3B36 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185BD871F57A068004D3B36 /* CoreLocation.framework */; };
+		C18988001F5C25ED00333233 /* ScheduleCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18987FF1F5C25ED00333233 /* ScheduleCustomCell.xib */; };
+		C18988021F5C343600333233 /* ScheduleCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18988011F5C343600333233 /* ScheduleCustomCell.swift */; };
+		C1A0C9921F5D8C7F00FB7AA2 /* ScheduleSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1A0C9911F5D8C7F00FB7AA2 /* ScheduleSectionHeaderView.xib */; };
+		C1A0C9941F5D95A100FB7AA2 /* ScheduleSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0C9931F5D95A100FB7AA2 /* ScheduleSectionHeaderView.swift */; };
+		C1A829961F5AF3CC00D11D7C /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A829951F5AF3CC00D11D7C /* TripDetailViewController.swift */; };
+		F7976D231F70AD2600E29F2A /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7976D221F70AD2600E29F2A /* Navigation.storyboard */; };
+		F7976D251F70AEC300E29F2A /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7976D241F70AEC300E29F2A /* NavigationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C14DFF821F54F8AD000F60E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C14DFF621F54F8AD000F60E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14DFF691F54F8AD000F60E9;
+			remoteInfo = atlantademo;
+		};
+		C14DFF8D1F54F8AD000F60E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C14DFF621F54F8AD000F60E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14DFF691F54F8AD000F60E9;
+			remoteInfo = atlantademo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5EEFD0501FA5275E00066957 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5EEFD04F1FA5275E00066957 /* AtriusActionZone.framework in Embed Frameworks */,
+				5EEFD0491FA5275E00066957 /* AtriusRoute.framework in Embed Frameworks */,
+				5EEFD04B1FA5275E00066957 /* AtriusCore.framework in Embed Frameworks */,
+				5EEFD04D1FA5275E00066957 /* AtriusLocation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		003F2935BDE7D98C1292571C /* Pods_atlantademo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atlantademo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7589762062883100E18DAB /* ZoneInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoneInfo.h; sourceTree = "<group>"; };
+		0D7589772062884200E18DAB /* ZoneInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoneInfo.m; sourceTree = "<group>"; };
+		4B1B39871FB6122A00BC2158 /* retailerdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = retailerdef.h; sourceTree = "<group>"; };
+		4B1B39881FB6209400BC2158 /* atlantademo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atlantademo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B1B39891FB6209400BC2158 /* RouteDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouteDataClass.m; sourceTree = "<group>"; };
+		4B598BCB1FB6491E0047B46E /* RouteDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteDataClass.h; sourceTree = "<group>"; };
+		4B598BCC1FBA7B2F0047B46E /* SimulateLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimulateLocation.m; sourceTree = "<group>"; };
+		4B598BCE1FBA7B480047B46E /* SimulateLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulateLocation.h; sourceTree = "<group>"; };
+		5E0110CB1FAFF33C00393B7C /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		5E0110CD1FAFFC7B00393B7C /* LoginPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPickerView.swift; sourceTree = "<group>"; };
+		5E0934ED1FBD2D9300EC7ED3 /* AssistanceTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceTypeEnum.swift; sourceTree = "<group>"; };
+		5E11C2FF1F9264A40047DF90 /* johnsmith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = johnsmith.json; sourceTree = "<group>"; };
+		5E15B5571F8AAC34000AFC7C /* IntermediateStop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntermediateStop+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E15B5581F8AAC34000AFC7C /* IntermediateStop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntermediateStop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E15B5591F8AAC34000AFC7C /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E15B55A1F8AAC34000AFC7C /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E15B55B1F8AAC34000AFC7C /* Traveler+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Traveler+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E15B55C1F8AAC34000AFC7C /* Traveler+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Traveler+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E76137A1FB542D600613705 /* jenny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jenny.json; sourceTree = "<group>"; };
+		5E76137C1FB543FB00613705 /* ernst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ernst.json; sourceTree = SOURCE_ROOT; };
+		5E76137E1FB544E400613705 /* jane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jane.json; sourceTree = SOURCE_ROOT; };
+		5E7D60F91F87182700396046 /* TripRouteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripRouteCell.xib; sourceTree = "<group>"; };
+		5E7D60FB1F87192600396046 /* TripRouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRouteCell.swift; sourceTree = "<group>"; };
+		5E95045D1FAAB0E700D31319 /* LoginScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginScreenView.xib; sourceTree = "<group>"; };
+		5E9B239E1F894A1E0096BBDD /* RewardStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardStatusEnum.swift; sourceTree = "<group>"; };
+		5EB55B7720633D7100A1C93C /* ATL_TGATE2018.mmpk */ = {isa = PBXFileReference; lastKnownFileType = file; path = ATL_TGATE2018.mmpk; sourceTree = "<group>"; };
+		5ED8D3B1206FEF7700484E8D /* GateLocations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GateLocations.h; sourceTree = "<group>"; };
+		5EEFD0441FA5275D00066957 /* AtriusRoute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtriusRoute.framework; sourceTree = "<group>"; };
+		5EEFD0451FA5275D00066957 /* AtriusCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtriusCore.framework; sourceTree = "<group>"; };
+		5EEFD0461FA5275D00066957 /* AtriusLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtriusLocation.framework; sourceTree = "<group>"; };
+		5EEFD0471FA5275D00066957 /* AtriusActionZone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AtriusActionZone.framework; sourceTree = "<group>"; };
+		5EF164E81F8C5E340053CD57 /* AirportEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportEmployee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5EF164E91F8C5E340053CD57 /* AirportEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirportEmployee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5EFA43001FB913E700C593B7 /* Assistance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assistance.storyboard; sourceTree = "<group>"; };
+		5EFA43021FB914F200C593B7 /* AssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistanceViewController.swift; sourceTree = "<group>"; };
+		8CB038DADEF6F11DA8E26DB7 /* Pods-atlantademo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atlantademo.release.xcconfig"; path = "Pods/Target Support Files/Pods-atlantademo/Pods-atlantademo.release.xcconfig"; sourceTree = "<group>"; };
+		9946F0A2AEF23645E9E90908 /* Pods-atlantademo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atlantademo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-atlantademo/Pods-atlantademo.debug.xcconfig"; sourceTree = "<group>"; };
+		C14DFF6A1F54F8AD000F60E9 /* atlantademo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atlantademo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14DFF6D1F54F8AD000F60E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C14DFF6F1F54F8AD000F60E9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C14DFF721F54F8AD000F60E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C14DFF751F54F8AD000F60E9 /* atlantademo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = atlantademo.xcdatamodel; sourceTree = "<group>"; };
+		C14DFF771F54F8AD000F60E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C14DFF7A1F54F8AD000F60E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C14DFF7C1F54F8AD000F60E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C14DFF811F54F8AD000F60E9 /* atlantademoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = atlantademoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14DFF851F54F8AD000F60E9 /* atlantademoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atlantademoTests.swift; sourceTree = "<group>"; };
+		C14DFF871F54F8AD000F60E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C14DFF8C1F54F8AD000F60E9 /* atlantademoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = atlantademoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14DFF901F54F8AD000F60E9 /* atlantademoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atlantademoUITests.swift; sourceTree = "<group>"; };
+		C14DFF921F54F8AD000F60E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17AE5F61F58F5E0001F4CE1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		C17AE5F81F58F688001F4CE1 /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		C17AE5FA1F58F69B001F4CE1 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C17AE5FC1F58F6AC001F4CE1 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		C182A74F1F641827001ECAB6 /* TripHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripHeaderView.xib; sourceTree = "<group>"; };
+		C182A7511F64211F001ECAB6 /* TripHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripHeaderView.swift; sourceTree = "<group>"; };
+		C182A7531F642AC0001ECAB6 /* TripSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripSectionHeaderView.swift; sourceTree = "<group>"; };
+		C182A7551F642B38001ECAB6 /* TripSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripSectionHeaderView.xib; sourceTree = "<group>"; };
+		C182A7571F642E64001ECAB6 /* TripCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripCustomCell.swift; sourceTree = "<group>"; };
+		C182A7591F642EE2001ECAB6 /* TripCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripCustomCell.xib; sourceTree = "<group>"; };
+		C185BD851F57A042004D3B36 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C185BD871F57A068004D3B36 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C18987FF1F5C25ED00333233 /* ScheduleCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleCustomCell.xib; sourceTree = "<group>"; };
+		C18988011F5C343600333233 /* ScheduleCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCustomCell.swift; sourceTree = "<group>"; };
+		C1A0C9911F5D8C7F00FB7AA2 /* ScheduleSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleSectionHeaderView.xib; sourceTree = "<group>"; };
+		C1A0C9931F5D95A100FB7AA2 /* ScheduleSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleSectionHeaderView.swift; sourceTree = "<group>"; };
+		C1A829951F5AF3CC00D11D7C /* TripDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
+		F7976D221F70AD2600E29F2A /* Navigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		F7976D241F70AEC300E29F2A /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C14DFF671F54F8AD000F60E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EEFD04C1FA5275E00066957 /* AtriusLocation.framework in Frameworks */,
+				C185BD881F57A068004D3B36 /* CoreLocation.framework in Frameworks */,
+				5EEFD04E1FA5275E00066957 /* AtriusActionZone.framework in Frameworks */,
+				5EEFD04A1FA5275E00066957 /* AtriusCore.framework in Frameworks */,
+				9E59941DDB079C6B15E374AC /* Pods_atlantademo.framework in Frameworks */,
+				5EEFD0481FA5275E00066957 /* AtriusRoute.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14DFF7E1F54F8AD000F60E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14DFF891F54F8AD000F60E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E7D60F81F8717DB00396046 /* TripRouteCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D60F91F87182700396046 /* TripRouteCell.xib */,
+				5E7D60FB1F87192600396046 /* TripRouteCell.swift */,
+			);
+			name = TripRouteCell;
+			sourceTree = "<group>";
+		};
+		5E95045C1FAAB0B800D31319 /* LoginScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				5E95045D1FAAB0E700D31319 /* LoginScreenView.xib */,
+				5E0110CB1FAFF33C00393B7C /* LoginScreenView.swift */,
+				5E0110CD1FAFFC7B00393B7C /* LoginPickerView.swift */,
+			);
+			name = LoginScreenView;
+			sourceTree = "<group>";
+		};
+		60FDEFB6D5FAC7680A6AA01A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9946F0A2AEF23645E9E90908 /* Pods-atlantademo.debug.xcconfig */,
+				8CB038DADEF6F11DA8E26DB7 /* Pods-atlantademo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C14DFF611F54F8AD000F60E9 = {
+			isa = PBXGroup;
+			children = (
+				5EEFD0471FA5275D00066957 /* AtriusActionZone.framework */,
+				5EEFD0451FA5275D00066957 /* AtriusCore.framework */,
+				5EEFD0461FA5275D00066957 /* AtriusLocation.framework */,
+				5EEFD0441FA5275D00066957 /* AtriusRoute.framework */,
+				5EB55B7720633D7100A1C93C /* ATL_TGATE2018.mmpk */,
+				5E11C2FF1F9264A40047DF90 /* johnsmith.json */,
+				5E76137A1FB542D600613705 /* jenny.json */,
+				5E76137C1FB543FB00613705 /* ernst.json */,
+				5E76137E1FB544E400613705 /* jane.json */,
+				C14DFF6C1F54F8AD000F60E9 /* atlantademo */,
+				C14DFF841F54F8AD000F60E9 /* atlantademoTests */,
+				C14DFF8F1F54F8AD000F60E9 /* atlantademoUITests */,
+				C14DFF6B1F54F8AD000F60E9 /* Products */,
+				C150C7781F565C340098399B /* Frameworks */,
+				60FDEFB6D5FAC7680A6AA01A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C14DFF6B1F54F8AD000F60E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C14DFF6A1F54F8AD000F60E9 /* atlantademo.app */,
+				C14DFF811F54F8AD000F60E9 /* atlantademoTests.xctest */,
+				C14DFF8C1F54F8AD000F60E9 /* atlantademoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C14DFF6C1F54F8AD000F60E9 /* atlantademo */ = {
+			isa = PBXGroup;
+			children = (
+				C185BD8B1F57A3F8004D3B36 /* Controllers */,
+				C185BD8A1F57A3F2004D3B36 /* Models */,
+				C185BD891F57A3E9004D3B36 /* Views */,
+				C14DFF6D1F54F8AD000F60E9 /* AppDelegate.swift */,
+				C14DFF771F54F8AD000F60E9 /* Assets.xcassets */,
+				4B1B39871FB6122A00BC2158 /* retailerdef.h */,
+				C14DFF7C1F54F8AD000F60E9 /* Info.plist */,
+			);
+			path = atlantademo;
+			sourceTree = "<group>";
+		};
+		C14DFF841F54F8AD000F60E9 /* atlantademoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C14DFF851F54F8AD000F60E9 /* atlantademoTests.swift */,
+				C14DFF871F54F8AD000F60E9 /* Info.plist */,
+			);
+			path = atlantademoTests;
+			sourceTree = "<group>";
+		};
+		C14DFF8F1F54F8AD000F60E9 /* atlantademoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C14DFF901F54F8AD000F60E9 /* atlantademoUITests.swift */,
+				C14DFF921F54F8AD000F60E9 /* Info.plist */,
+			);
+			path = atlantademoUITests;
+			sourceTree = "<group>";
+		};
+		C150C7781F565C340098399B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C185BD871F57A068004D3B36 /* CoreLocation.framework */,
+				C185BD851F57A042004D3B36 /* MapKit.framework */,
+				003F2935BDE7D98C1292571C /* Pods_atlantademo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C182A75B1F643107001ECAB6 /* TripCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				C182A7571F642E64001ECAB6 /* TripCustomCell.swift */,
+				C182A7591F642EE2001ECAB6 /* TripCustomCell.xib */,
+			);
+			name = TripCustomCell;
+			sourceTree = "<group>";
+		};
+		C182A75C1F643122001ECAB6 /* ScheduleCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				C18987FF1F5C25ED00333233 /* ScheduleCustomCell.xib */,
+				C18988011F5C343600333233 /* ScheduleCustomCell.swift */,
+			);
+			name = ScheduleCustomCell;
+			sourceTree = "<group>";
+		};
+		C182A75D1F64313A001ECAB6 /* TripSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C182A7531F642AC0001ECAB6 /* TripSectionHeaderView.swift */,
+				C182A7551F642B38001ECAB6 /* TripSectionHeaderView.xib */,
+			);
+			name = TripSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		C182A75E1F643150001ECAB6 /* TripHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C182A74F1F641827001ECAB6 /* TripHeaderView.xib */,
+				C182A7511F64211F001ECAB6 /* TripHeaderView.swift */,
+			);
+			name = TripHeaderView;
+			sourceTree = "<group>";
+		};
+		C182A75F1F643169001ECAB6 /* ScheduleSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C1A0C9911F5D8C7F00FB7AA2 /* ScheduleSectionHeaderView.xib */,
+				C1A0C9931F5D95A100FB7AA2 /* ScheduleSectionHeaderView.swift */,
+			);
+			name = ScheduleSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		C185BD891F57A3E9004D3B36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E95045C1FAAB0B800D31319 /* LoginScreenView */,
+				5E7D60F81F8717DB00396046 /* TripRouteCell */,
+				C14DFF791F54F8AD000F60E9 /* LaunchScreen.storyboard */,
+				C14DFF711F54F8AD000F60E9 /* Main.storyboard */,
+				F7976D221F70AD2600E29F2A /* Navigation.storyboard */,
+				5EFA43001FB913E700C593B7 /* Assistance.storyboard */,
+				C182A75C1F643122001ECAB6 /* ScheduleCustomCell */,
+				C182A75F1F643169001ECAB6 /* ScheduleSectionHeaderView */,
+				C182A75D1F64313A001ECAB6 /* TripSectionHeaderView */,
+				C182A75B1F643107001ECAB6 /* TripCustomCell */,
+				C182A75E1F643150001ECAB6 /* TripHeaderView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C185BD8A1F57A3F2004D3B36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EF164E81F8C5E340053CD57 /* AirportEmployee+CoreDataClass.swift */,
+				5EF164E91F8C5E340053CD57 /* AirportEmployee+CoreDataProperties.swift */,
+				5E15B5571F8AAC34000AFC7C /* IntermediateStop+CoreDataClass.swift */,
+				5E15B5581F8AAC34000AFC7C /* IntermediateStop+CoreDataProperties.swift */,
+				5E15B5591F8AAC34000AFC7C /* Trip+CoreDataClass.swift */,
+				5E15B55A1F8AAC34000AFC7C /* Trip+CoreDataProperties.swift */,
+				5E15B55B1F8AAC34000AFC7C /* Traveler+CoreDataClass.swift */,
+				5E15B55C1F8AAC34000AFC7C /* Traveler+CoreDataProperties.swift */,
+				C14DFF741F54F8AD000F60E9 /* atlantademo.xcdatamodeld */,
+				5E9B239E1F894A1E0096BBDD /* RewardStatusEnum.swift */,
+				5E0934ED1FBD2D9300EC7ED3 /* AssistanceTypeEnum.swift */,
+				4B598BCB1FB6491E0047B46E /* RouteDataClass.h */,
+				4B1B39891FB6209400BC2158 /* RouteDataClass.m */,
+				4B1B39881FB6209400BC2158 /* atlantademo-Bridging-Header.h */,
+				4B598BCE1FBA7B480047B46E /* SimulateLocation.h */,
+				4B598BCC1FBA7B2F0047B46E /* SimulateLocation.m */,
+				0D7589762062883100E18DAB /* ZoneInfo.h */,
+				0D7589772062884200E18DAB /* ZoneInfo.m */,
+				5ED8D3B1206FEF7700484E8D /* GateLocations.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C185BD8B1F57A3F8004D3B36 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C14DFF6F1F54F8AD000F60E9 /* HomeViewController.swift */,
+				C17AE5F61F58F5E0001F4CE1 /* ScheduleViewController.swift */,
+				C17AE5F81F58F688001F4CE1 /* BookViewController.swift */,
+				C17AE5FA1F58F69B001F4CE1 /* FeedViewController.swift */,
+				C17AE5FC1F58F6AC001F4CE1 /* MoreViewController.swift */,
+				C1A829951F5AF3CC00D11D7C /* TripDetailViewController.swift */,
+				F7976D241F70AEC300E29F2A /* NavigationViewController.swift */,
+				5EFA43021FB914F200C593B7 /* AssistanceViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C14DFF691F54F8AD000F60E9 /* atlantademo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14DFF951F54F8AD000F60E9 /* Build configuration list for PBXNativeTarget "atlantademo" */;
+			buildPhases = (
+				1B45173EC21239C03508A604 /* [CP] Check Pods Manifest.lock */,
+				C14DFF661F54F8AD000F60E9 /* Sources */,
+				C14DFF671F54F8AD000F60E9 /* Frameworks */,
+				C14DFF681F54F8AD000F60E9 /* Resources */,
+				DEE791EF552B797D2426BA95 /* [CP] Embed Pods Frameworks */,
+				170E33358973E21FF91E486D /* [CP] Copy Pods Resources */,
+				5EEFD0501FA5275E00066957 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = atlantademo;
+			productName = atlantademo;
+			productReference = C14DFF6A1F54F8AD000F60E9 /* atlantademo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C14DFF801F54F8AD000F60E9 /* atlantademoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14DFF981F54F8AD000F60E9 /* Build configuration list for PBXNativeTarget "atlantademoTests" */;
+			buildPhases = (
+				C14DFF7D1F54F8AD000F60E9 /* Sources */,
+				C14DFF7E1F54F8AD000F60E9 /* Frameworks */,
+				C14DFF7F1F54F8AD000F60E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C14DFF831F54F8AD000F60E9 /* PBXTargetDependency */,
+			);
+			name = atlantademoTests;
+			productName = atlantademoTests;
+			productReference = C14DFF811F54F8AD000F60E9 /* atlantademoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C14DFF8B1F54F8AD000F60E9 /* atlantademoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14DFF9B1F54F8AD000F60E9 /* Build configuration list for PBXNativeTarget "atlantademoUITests" */;
+			buildPhases = (
+				C14DFF881F54F8AD000F60E9 /* Sources */,
+				C14DFF891F54F8AD000F60E9 /* Frameworks */,
+				C14DFF8A1F54F8AD000F60E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C14DFF8E1F54F8AD000F60E9 /* PBXTargetDependency */,
+			);
+			name = atlantademoUITests;
+			productName = atlantademoUITests;
+			productReference = C14DFF8C1F54F8AD000F60E9 /* atlantademoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C14DFF621F54F8AD000F60E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = gisi;
+				TargetAttributes = {
+					C14DFF691F54F8AD000F60E9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 96NQCTR464;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C14DFF801F54F8AD000F60E9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 96NQCTR464;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C14DFF691F54F8AD000F60E9;
+					};
+					C14DFF8B1F54F8AD000F60E9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 96NQCTR464;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C14DFF691F54F8AD000F60E9;
+					};
+				};
+			};
+			buildConfigurationList = C14DFF651F54F8AD000F60E9 /* Build configuration list for PBXProject "atlantademo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C14DFF611F54F8AD000F60E9;
+			productRefGroup = C14DFF6B1F54F8AD000F60E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C14DFF691F54F8AD000F60E9 /* atlantademo */,
+				C14DFF801F54F8AD000F60E9 /* atlantademoTests */,
+				C14DFF8B1F54F8AD000F60E9 /* atlantademoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C14DFF681F54F8AD000F60E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E95045E1FAAB0E700D31319 /* LoginScreenView.xib in Resources */,
+				5E11C3001F9264C20047DF90 /* johnsmith.json in Resources */,
+				C14DFF7B1F54F8AD000F60E9 /* LaunchScreen.storyboard in Resources */,
+				C1A0C9921F5D8C7F00FB7AA2 /* ScheduleSectionHeaderView.xib in Resources */,
+				5E76137D1FB543FC00613705 /* ernst.json in Resources */,
+				C182A7561F642B38001ECAB6 /* TripSectionHeaderView.xib in Resources */,
+				5EFA43011FB913E700C593B7 /* Assistance.storyboard in Resources */,
+				C182A7501F641827001ECAB6 /* TripHeaderView.xib in Resources */,
+				C14DFF781F54F8AD000F60E9 /* Assets.xcassets in Resources */,
+				C182A75A1F642EE2001ECAB6 /* TripCustomCell.xib in Resources */,
+				F7976D231F70AD2600E29F2A /* Navigation.storyboard in Resources */,
+				5E7D60FA1F87182700396046 /* TripRouteCell.xib in Resources */,
+				5EB55B7820633D7100A1C93C /* ATL_TGATE2018.mmpk in Resources */,
+				C14DFF731F54F8AD000F60E9 /* Main.storyboard in Resources */,
+				5E76137B1FB542D600613705 /* jenny.json in Resources */,
+				C18988001F5C25ED00333233 /* ScheduleCustomCell.xib in Resources */,
+				5E76137F1FB544E400613705 /* jane.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14DFF7F1F54F8AD000F60E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14DFF8A1F54F8AD000F60E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		170E33358973E21FF91E486D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-atlantademo/Pods-atlantademo-resources.sh",
+				"${PODS_ROOT}/ArcGIS-Runtime-SDK-iOS/ArcGIS.framework/ArcGIS.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atlantademo/Pods-atlantademo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B45173EC21239C03508A604 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-atlantademo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE791EF552B797D2426BA95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-atlantademo/Pods-atlantademo-frameworks.sh",
+				"${PODS_ROOT}/ArcGIS-Runtime-SDK-iOS/ArcGIS.framework",
+				"${PODS_ROOT}/ArcGIS-Runtime-SDK-iOS/ArcGIS.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcGIS.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/ArcGIS.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atlantademo/Pods-atlantademo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C14DFF661F54F8AD000F60E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A0C9941F5D95A100FB7AA2 /* ScheduleSectionHeaderView.swift in Sources */,
+				C17AE5FD1F58F6AC001F4CE1 /* MoreViewController.swift in Sources */,
+				5E15B55E1F8AAC34000AFC7C /* IntermediateStop+CoreDataProperties.swift in Sources */,
+				C14DFF701F54F8AD000F60E9 /* HomeViewController.swift in Sources */,
+				C182A7521F64211F001ECAB6 /* TripHeaderView.swift in Sources */,
+				5EF164EA1F8C5E340053CD57 /* AirportEmployee+CoreDataClass.swift in Sources */,
+				4B598BCD1FBA7B2F0047B46E /* SimulateLocation.m in Sources */,
+				C1A829961F5AF3CC00D11D7C /* TripDetailViewController.swift in Sources */,
+				C14DFF6E1F54F8AD000F60E9 /* AppDelegate.swift in Sources */,
+				5E7D60FC1F87192600396046 /* TripRouteCell.swift in Sources */,
+				C17AE5F91F58F688001F4CE1 /* BookViewController.swift in Sources */,
+				C182A7581F642E64001ECAB6 /* TripCustomCell.swift in Sources */,
+				5E15B55F1F8AAC34000AFC7C /* Trip+CoreDataClass.swift in Sources */,
+				5E0934EE1FBD2D9300EC7ED3 /* AssistanceTypeEnum.swift in Sources */,
+				4B1B398A1FB6209400BC2158 /* RouteDataClass.m in Sources */,
+				C14DFF761F54F8AD000F60E9 /* atlantademo.xcdatamodeld in Sources */,
+				C18988021F5C343600333233 /* ScheduleCustomCell.swift in Sources */,
+				5EFA43031FB914F200C593B7 /* AssistanceViewController.swift in Sources */,
+				C17AE5FB1F58F69B001F4CE1 /* FeedViewController.swift in Sources */,
+				0D7589782062884200E18DAB /* ZoneInfo.m in Sources */,
+				5E0110CC1FAFF33C00393B7C /* LoginScreenView.swift in Sources */,
+				5E0110CE1FAFFC7B00393B7C /* LoginPickerView.swift in Sources */,
+				5EF164EB1F8C5E340053CD57 /* AirportEmployee+CoreDataProperties.swift in Sources */,
+				C182A7541F642AC0001ECAB6 /* TripSectionHeaderView.swift in Sources */,
+				5E15B5611F8AAC34000AFC7C /* Traveler+CoreDataClass.swift in Sources */,
+				5E15B5621F8AAC34000AFC7C /* Traveler+CoreDataProperties.swift in Sources */,
+				F7976D251F70AEC300E29F2A /* NavigationViewController.swift in Sources */,
+				C17AE5F71F58F5E0001F4CE1 /* ScheduleViewController.swift in Sources */,
+				5E15B55D1F8AAC34000AFC7C /* IntermediateStop+CoreDataClass.swift in Sources */,
+				5E15B5601F8AAC34000AFC7C /* Trip+CoreDataProperties.swift in Sources */,
+				5E9B239F1F894A1E0096BBDD /* RewardStatusEnum.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14DFF7D1F54F8AD000F60E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14DFF861F54F8AD000F60E9 /* atlantademoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14DFF881F54F8AD000F60E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14DFF911F54F8AD000F60E9 /* atlantademoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C14DFF831F54F8AD000F60E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C14DFF691F54F8AD000F60E9 /* atlantademo */;
+			targetProxy = C14DFF821F54F8AD000F60E9 /* PBXContainerItemProxy */;
+		};
+		C14DFF8E1F54F8AD000F60E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C14DFF691F54F8AD000F60E9 /* atlantademo */;
+			targetProxy = C14DFF8D1F54F8AD000F60E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C14DFF711F54F8AD000F60E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14DFF721F54F8AD000F60E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C14DFF791F54F8AD000F60E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14DFF7A1F54F8AD000F60E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C14DFF931F54F8AD000F60E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C14DFF941F54F8AD000F60E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C14DFF961F54F8AD000F60E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9946F0A2AEF23645E9E90908 /* Pods-atlantademo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 96NQCTR464;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = atlantademo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisi.atlantademo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "atlantademo/atlantademo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C14DFF971F54F8AD000F60E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB038DADEF6F11DA8E26DB7 /* Pods-atlantademo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 96NQCTR464;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = atlantademo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisi.atlantademo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "atlantademo/atlantademo-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C14DFF991F54F8AD000F60E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 96NQCTR464;
+				INFOPLIST_FILE = atlantademoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisi.atlantademoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atlantademo.app/atlantademo";
+			};
+			name = Debug;
+		};
+		C14DFF9A1F54F8AD000F60E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 96NQCTR464;
+				INFOPLIST_FILE = atlantademoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisi.atlantademoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atlantademo.app/atlantademo";
+			};
+			name = Release;
+		};
+		C14DFF9C1F54F8AD000F60E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 96NQCTR464;
+				INFOPLIST_FILE = atlantademoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisi.atlantademoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = atlantademo;
+			};
+			name = Debug;
+		};
+		C14DFF9D1F54F8AD000F60E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 96NQCTR464;
+				INFOPLIST_FILE = atlantademoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gisi.atlantademoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = atlantademo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C14DFF651F54F8AD000F60E9 /* Build configuration list for PBXProject "atlantademo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14DFF931F54F8AD000F60E9 /* Debug */,
+				C14DFF941F54F8AD000F60E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14DFF951F54F8AD000F60E9 /* Build configuration list for PBXNativeTarget "atlantademo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14DFF961F54F8AD000F60E9 /* Debug */,
+				C14DFF971F54F8AD000F60E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14DFF981F54F8AD000F60E9 /* Build configuration list for PBXNativeTarget "atlantademoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14DFF991F54F8AD000F60E9 /* Debug */,
+				C14DFF9A1F54F8AD000F60E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14DFF9B1F54F8AD000F60E9 /* Build configuration list for PBXNativeTarget "atlantademoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14DFF9C1F54F8AD000F60E9 /* Debug */,
+				C14DFF9D1F54F8AD000F60E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C14DFF741F54F8AD000F60E9 /* atlantademo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C14DFF751F54F8AD000F60E9 /* atlantademo.xcdatamodel */,
+			);
+			currentVersion = C14DFF751F54F8AD000F60E9 /* atlantademo.xcdatamodel */;
+			path = atlantademo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C14DFF621F54F8AD000F60E9 /* Project object */;
+}
